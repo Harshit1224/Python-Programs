@@ -1,0 +1,33 @@
+from math import *
+  
+# Function check whether x is a 
+# perfect square or not 
+def isPerfectSquare(x): 
+      
+    # Find floating point value of 
+    # square root of x. 
+    sr = sqrt(x) 
+  
+    # If square root is an integer 
+    return((sr - floor(sr)) == 0) 
+  
+# Function to check Sunny Number 
+def checkSunnyNumber(N): 
+      
+    # Check if (N + 1) is a perfect 
+    # square or not 
+    if (isPerfectSquare(N + 1)): 
+        print("Yes") 
+  
+    # If (N+1) is not a perfect square 
+    else: 
+        print("No") 
+  
+# Driver Code 
+if __name__ == '__main__': 
+      
+    # Given Number 
+    N = 8
+  
+    # Function call 
+    checkSunnyNumber(N) 
